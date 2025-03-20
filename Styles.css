@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fondo de la página */
+}
+
+.card-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.login-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-box h1 {
+    margin-bottom: 10px;
+    color: #007bff; /* Azul principal */
+}
+
+.input-field, .login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los botones de redes sociales */
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.social-button i {
+    margin-right: 10px;
+}
+
+.social-button.google {
+    border-color: #db4437; /* Rojo de Google */
+    color: #db4437; /* Rojo de Google */
+}
+
+.social-button.google:hover {
+    background-color: #f8f9fa; /* Fondo claro al pasar el mouse */
+}
+
+.social-button.facebook {
+    border-color: #1877f2; /* Azul de Facebook */
+    color: #1877f2; /* Azul de Facebook */
+}
+
+.social-button.facebook:hover {
+    background-color: #f8f9fa; /* Fondo claro al pasar el mouse */
+}
+
+/* Estilos para el separador "or continue with email" */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #888;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.separator::before {
+    margin-right: 10px;
+}
+
+.separator::after {
+    margin-left: 10px;
+}
+
+/* Estilos para los campos de entrada con iconos */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-with-icon input {
+    padding-left: 35px; /* Espacio para el icono */
+}
+
+/* Estilos del carrusel */
+.visual-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0056b3;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner > .item > img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Estilos para el contenedor "Remember Me" */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.remember-me label {
+    order: 1; /* Mueve el texto a la izquierda */
+    margin-right: 10px; /* Espacio entre el texto y el checkbox */
+}
+
+.remember-me input {
+    order: 2; /* Mueve el checkbox a la derecha */
+}
