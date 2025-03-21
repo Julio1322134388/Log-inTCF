@@ -27,12 +27,11 @@ body {
 }
 
 .login-section {
-    width: 50%;
+    flex: 1; /* Ocupa el 50% */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
 }
 
 .login-box {
@@ -146,12 +145,12 @@ body {
 
 /* Estilos del carrusel */
 .visual-section {
-    width: 50%;
+    flex: 1; /* Ocupa el otro 50% */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0056b3;
-    padding: 0;
+    overflow: hidden; /* Evita márgenes extra */
 }
 
 .carousel {
@@ -164,10 +163,15 @@ body {
     height: 100%;
 }
 
+.carousel-inner > .item {
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-inner > .item > img {
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Evita distorsiones */
 }
 
 /* Estilos para el contenedor "Remember Me" */
